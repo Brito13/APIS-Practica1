@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apis</title>
-    <link rel="preload" href="Style.css">
-    <link rel="stylesheet" href="Style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  
-</head>
-<body>
-    <main>
-        <div class="form">
-            <div class="informacion">
-                <h3 class="t1">PokeAPI</h3>
-                <p class="t2">Consulta la informacion de tu pokemon gg</p>
-                <div class="form-informacion">
-                    <form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contenedor">
+      <form class="from">
+        <h1>Pokemon API</h1>
+        <p>
+          Puedes consultar las informaciones de los pokemones que mas te gusten
+        </p>
+        <label for="id">ID del Pokémon:</label>
+        <input type="number" id="pokemonId" name="pokemonId" /><br /><br />
 
-                        <div class="txt">
-                        <input type="number" placeholder="ID pokemon">
-                        </div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" readonly /><br /><br />
 
-                        <div class="txt">
-                        <input type="text" placeholder="Nombre" id="Nombre">
-                        </div>
+        <label for="height">Altura:</label>
+        <input type="text" id="height" name="height" readonly /><br /><br />
 
-                        <div class="txt">
-                        <input type="text" placeholder="Altura" id="Altura">
-                        </div>
+        <label for="weight">Peso:</label>
+        <input type="text" id="weight" name="weight" readonly /><br /><br />
 
-                        <div class="txt">
-                        <input type="text" placeholder="Peso" id="Tipo">
-                        </div>
-                        
-                         <div class="txt">
-                            <input type="button" value="Consultar">
-                         </div>
-                        
-                      </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-    </main>
-</body>
+        <label for="type">Tipo:</label>
+        <input type="text" id="type" name="type" readonly /><br /><br />
+
+        <button type="button" onclick="fetchPokemon()">Buscar Pokémon</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  hola
 </html>
